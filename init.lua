@@ -1,1 +1,1 @@
-print("hello Ivan com anem")
+require("ivn1s.set")
