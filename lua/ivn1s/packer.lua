@@ -6,16 +6,13 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
   use 'tpope/vim-surround'
   
-  -- snippets and completion
+  -- completion
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use "hrsh7th/cmp-nvim-lsp"
-  use "hrsh7th/cmp-nvim-lua"
-  use 'saadparwaiz1/cmp_luasnip' 
-  use 'L3MON4D3/LuaSnip' 
-
   
+  -- lsp
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
 
@@ -24,4 +21,3 @@ return require('packer').startup(function()
   'nvim-telescope/telescope.nvim', tag = '0.1.0', requires = { {'nvim-lua/plenary.nvim'} }
 }
 end)
-
