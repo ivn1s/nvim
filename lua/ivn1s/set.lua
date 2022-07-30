@@ -1,4 +1,3 @@
-
 vim.g.mapleader = ' '
 
 vim.opt.nu = true
@@ -14,3 +13,5 @@ vim.opt.incsearch = true
 vim.opt.smartindent = true
 vim.opt.wrap = false
 vim.opt.laststatus = 0
+
+vim.g.netrwbanner = 0
