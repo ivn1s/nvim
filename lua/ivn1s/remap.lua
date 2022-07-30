@@ -2,11 +2,16 @@ local nnoremap = require("ivn1s.keymap").nnoremap
 local inoremap = require("ivn1s.keymap").inoremap
 local vnoremap = require("ivn1s.keymap").vnoremap
 
-nnoremap(" r", "<cmd>Ex<CR>")
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 inoremap("jj", "<Esc>")
-nnoremap(" f", "<cmd>Telescope find_files<CR>")
-nnoremap(" p", "<cmd>Telescope buffers<CR>")
-nnoremap(" t", "<cmd>Telescope<CR>")
+
+nnoremap("<leader>e", "<cmd>Ex<CR>")
+nnoremap("<leader>f", "<cmd>Telescope find_files<CR>")
+nnoremap("<leader>g", "<cmd>Telescope git_files<CR>")
+nnoremap("<leader>p", "<cmd>Telescope buffers<CR>")
+nnoremap("<leader>t", "<cmd>Telescope<CR>")
 nnoremap("<c-f>", "<cmd>Telescope live_grep<CR>")
 
 -- Move between panes
@@ -19,3 +24,7 @@ nnoremap("<c-l>", "<cmd>wincmd l<CR>")
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
 
+-- Follow cursor
+nnoremap("n","nzzzv")
+nnoremap("N","Nzzzv")
+nnoremap("J","mzJ`z")
